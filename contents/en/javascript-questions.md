@@ -6,9 +6,9 @@ Answers to [Front-end Job Interview Questions - JS Questions](https://github.com
 
 ## Table of Contents
 
-- [Explain event delegation](#explain-event-delegation)
-- [Explain how `this` works in JavaScript](#explain-how-this-works-in-javascript)
-- [Explain how prototypal inheritance works](#explain-how-prototypal-inheritance-works)
+- [Explain event delegation](#explain-event-delegation)  (11-29-22)
+- [Explain how `this` works in JavaScript](#explain-how-this-works-in-javascript)  (11-29-22)
+- [Explain how prototypal inheritance works](#explain-how-prototypal-inheritance-works)  (11-29-22)
 - [What do you think of AMD vs CommonJS?](#what-do-you-think-of-amd-vs-commonjs)
 - [Explain why the following doesn't work as an IIFE: `function foo(){ }();`. What needs to be changed to properly make it an IIFE?](#explain-why-the-following-doesnt-work-as-an-iife-function-foo--what-needs-to-be-changed-to-properly-make-it-an-iife)
 - [What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for any of these states?](#whats-the-difference-between-a-variable-that-is-null-undefined-or-undeclared-how-would-you-go-about-checking-for-any-of-these-states)
@@ -88,7 +88,7 @@ There's no simple explanation for `this`; it is one of the most confusing concep
 
 For an in-depth explanation, do check out his [article on Medium](https://codeburst.io/the-simple-rules-to-this-in-javascript-35d97f31bde3).
 
-#### Can you give an example of one of the ways that working with this has changed in ES6?  (11-29-22)
+#### Can you give an example of one of the ways that working with this has changed in ES6?
 
 ES6 allows you to use [arrow functions](http://2ality.com/2017/12/alternate-this.html#arrow-functions) which uses the [enclosing lexical scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_separate_this). This is usually convenient, but does prevent the caller from controlling context via `.call` or `.apply`—the consequences being that a library such as `jQuery` will not properly bind `this` in your event handler functions. Thus, it's important to keep this in mind when refactoring large legacy applications.
 
@@ -103,7 +103,7 @@ ES6 allows you to use [arrow functions](http://2ality.com/2017/12/alternate-this
 
 This is an extremely common JavaScript interview question. All JavaScript objects have a `__proto__` property, that is a reference to another object, which is called the object's "prototype". When a property is accessed on an object and if the property is not found on that object, the JavaScript engine looks at the object's `__proto__`, and the `__proto__`'s `__proto__` and so on, until it finds the property defined on one of the `__proto__`s or until it reaches the end of the prototype chain. This behavior simulates classical inheritance, but it is really more of [delegation than inheritance](https://davidwalsh.name/javascript-objects).
 
-#### Example of Prototypal Inheritance  (11-29-22)
+#### Example of Prototypal Inheritance 
 
 We already have a build-in `Object.create`, but if you were to provide a polyfill for it, that might look like:
 

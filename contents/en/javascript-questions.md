@@ -61,7 +61,7 @@ Answers to [Front-end Job Interview Questions - JS Questions](https://github.com
 - [How can you share code between files?](#how-can-you-share-code-between-files)
 - [Why you might want to create static class members?](#why-you-might-want-to-create-static-class-members)
 
-### Explain event delegation
+### Explain event delegation (11-29-22)
 
 Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM. The benefits of this technique are:
 
@@ -75,7 +75,7 @@ Event delegation is a technique involving adding event listeners to a parent ele
 
 [[↑] Back to top](#table-of-contents)
 
-### Explain how `this` works in JavaScript
+### Explain how `this` works in JavaScript  (11-29-22)
 
 There's no simple explanation for `this`; it is one of the most confusing concepts in JavaScript. A hand-wavey explanation is that the value of `this` depends on how the function is called. I have read many explanations on `this` online, and I found [Arnav Aggrawal](https://medium.com/@arnav_aggarwal)'s explanation to be the clearest. The following rules are applied:
 
@@ -88,7 +88,7 @@ There's no simple explanation for `this`; it is one of the most confusing concep
 
 For an in-depth explanation, do check out his [article on Medium](https://codeburst.io/the-simple-rules-to-this-in-javascript-35d97f31bde3).
 
-#### Can you give an example of one of the ways that working with this has changed in ES6?
+#### Can you give an example of one of the ways that working with this has changed in ES6?  (11-29-22)
 
 ES6 allows you to use [arrow functions](http://2ality.com/2017/12/alternate-this.html#arrow-functions) which uses the [enclosing lexical scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_separate_this). This is usually convenient, but does prevent the caller from controlling context via `.call` or `.apply`—the consequences being that a library such as `jQuery` will not properly bind `this` in your event handler functions. Thus, it's important to keep this in mind when refactoring large legacy applications.
 
@@ -99,11 +99,11 @@ ES6 allows you to use [arrow functions](http://2ality.com/2017/12/alternate-this
 
 [[↑] Back to top](#table-of-contents)
 
-### Explain how prototypal inheritance works
+### Explain how prototypal inheritance works  (11-29-22)
 
 This is an extremely common JavaScript interview question. All JavaScript objects have a `__proto__` property, that is a reference to another object, which is called the object's "prototype". When a property is accessed on an object and if the property is not found on that object, the JavaScript engine looks at the object's `__proto__`, and the `__proto__`'s `__proto__` and so on, until it finds the property defined on one of the `__proto__`s or until it reaches the end of the prototype chain. This behavior simulates classical inheritance, but it is really more of [delegation than inheritance](https://davidwalsh.name/javascript-objects).
 
-#### Example of Prototypal Inheritance
+#### Example of Prototypal Inheritance  (11-29-22)
 
 We already have a build-in `Object.create`, but if you were to provide a polyfill for it, that might look like:
 

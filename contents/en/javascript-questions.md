@@ -9,10 +9,10 @@ Answers to [Front-end Job Interview Questions - JS Questions](https://github.com
 - [Explain event delegation](#explain-event-delegation)  (11-29-22)
 - [Explain how `this` works in JavaScript](#explain-how-this-works-in-javascript)  (11-29-22)
 - [Explain how prototypal inheritance works](#explain-how-prototypal-inheritance-works)  (11-29-22)
-- [What do you think of AMD vs CommonJS?](#what-do-you-think-of-amd-vs-commonjs)
-- [Explain why the following doesn't work as an IIFE: `function foo(){ }();`. What needs to be changed to properly make it an IIFE?](#explain-why-the-following-doesnt-work-as-an-iife-function-foo--what-needs-to-be-changed-to-properly-make-it-an-iife)
-- [What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for any of these states?](#whats-the-difference-between-a-variable-that-is-null-undefined-or-undeclared-how-would-you-go-about-checking-for-any-of-these-states)
-- [What is a closure, and how/why would you use one?](#what-is-a-closure-and-howwhy-would-you-use-one)
+- [What do you think of AMD vs CommonJS?](#what-do-you-think-of-amd-vs-commonjs) (12-1-22)
+- [Explain why the following doesn't work as an IIFE: `function foo(){ }();`. What needs to be changed to properly make it an IIFE?](#explain-why-the-following-doesnt-work-as-an-iife-function-foo--what-needs-to-be-changed-to-properly-make-it-an-iife) (12-1-22)
+- [What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for any of these states?](#whats-the-difference-between-a-variable-that-is-null-undefined-or-undeclared-how-would-you-go-about-checking-for-any-of-these-states) (12-1-22)
+- [What is a closure, and how/why would you use one?](#what-is-a-closure-and-howwhy-would-you-use-one) (12-1-22)
 - [Can you describe the main difference between a `.forEach` loop and a `.map()` loop and why you would pick one versus the other?](#can-you-describe-the-main-difference-between-a-foreach-loop-and-a-map-loop-and-why-you-would-pick-one-versus-the-other)
 - [What's a typical use case for anonymous functions?](#whats-a-typical-use-case-for-anonymous-functions)
 - [How do you organize your code? (module pattern, classical inheritance?)](#how-do-you-organize-your-code-module-pattern-classical-inheritance)
@@ -188,7 +188,7 @@ c.constructor.name;
 
 [[↑] Back to top](#table-of-contents)
 
-### What do you think of AMD vs CommonJS?
+### What do you think of AMD vs CommonJS? (12-1-22)
 
 Both are ways to implement a module system, which was not natively present in JavaScript until ES2015 came along. CommonJS is synchronous while AMD (Asynchronous Module Definition) is obviously asynchronous. CommonJS is designed with server-side development in mind while AMD, with its support for asynchronous loading of modules, is more intended for browsers.
 
@@ -203,7 +203,7 @@ I'm glad that with ES2015 modules, that has support for both synchronous and asy
 
 [[↑] Back to top](#table-of-contents)
 
-### Explain why the following doesn't work as an IIFE: `function foo(){ }();`. What needs to be changed to properly make it an IIFE?
+### Explain why the following doesn't work as an IIFE: `function foo(){ }();`. What needs to be changed to properly make it an IIFE? (12-1-22)
 
 IIFE stands for Immediately Invoked Function Expressions. The JavaScript parser reads `function foo(){ }();` as `function foo(){ }` and `();`, where the former is a _function declaration_ and the latter (a pair of parentheses) is an attempt at calling a function but there is no name specified, hence it throws `Uncaught SyntaxError: Unexpected token )`.
 
@@ -226,7 +226,7 @@ console.log(foo); // undefined
 
 [[↑] Back to top](#table-of-contents)
 
-### What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for any of these states?
+### What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for any of these states? (12-1-22)
 
 **Undeclared** variables are created when you assign a value to an identifier that is not previously created using `var`, `let` or `const`. Undeclared variables will be defined globally, outside of the current scope. In strict mode, a `ReferenceError` will be thrown when you try to assign to an undeclared variable. Undeclared variables are bad just like how global variables are bad. Avoid them at all cost! To check for them, wrap its usage in a `try`/`catch` block.
 
@@ -273,7 +273,7 @@ As a personal habit, I never leave my variables undeclared or unassigned. I will
 
 [[↑] Back to top](#table-of-contents)
 
-### What is a closure, and how/why would you use one?
+### What is a closure, and how/why would you use one? (12-1-22)
 
 A closure is the combination of a function and the lexical environment within which that function was declared. The word "lexical" refers to the fact that lexical scoping uses the location where a variable is declared within the source code to determine where that variable is available. Closures are functions that have access to the outer (enclosing) function's variables—scope chain even after the outer function has returned.
 

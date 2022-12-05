@@ -14,12 +14,12 @@ Answers to [Front-end Job Interview Questions - JS Questions](https://github.com
 - [What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for any of these states?](#whats-the-difference-between-a-variable-that-is-null-undefined-or-undeclared-how-would-you-go-about-checking-for-any-of-these-states) (12-1-22)
 - [What is a closure, and how/why would you use one?](#what-is-a-closure-and-howwhy-would-you-use-one) (12-1-22)
 - [Can you describe the main difference between a `.forEach` loop and a `.map()` loop and why you would pick one versus the other?](#can-you-describe-the-main-difference-between-a-foreach-loop-and-a-map-loop-and-why-you-would-pick-one-versus-the-other)
-- [What's a typical use case for anonymous functions?](#whats-a-typical-use-case-for-anonymous-functions)
-- [How do you organize your code? (module pattern, classical inheritance?)](#how-do-you-organize-your-code-module-pattern-classical-inheritance)
-- [What's the difference between host objects and native objects?](#whats-the-difference-between-host-objects-and-native-objects)
-- [Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?](#difference-between-function-person-var-person--person-and-var-person--new-person)
-- [What's the difference between `.call` and `.apply`?](#whats-the-difference-between-call-and-apply)
-- [Explain `Function.prototype.bind`.](#explain-functionprototypebind)
+- [What's a typical use case for anonymous functions?](#whats-a-typical-use-case-for-anonymous-functions) (12-5-22)
+- [How do you organize your code? (module pattern, classical inheritance?)](#how-do-you-organize-your-code-module-pattern-classical-inheritance) (12-5-22)
+- [What's the difference between host objects and native objects?](#whats-the-difference-between-host-objects-and-native-objects) (12-5-22)
+- [Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?](#difference-between-function-person-var-person--person-and-var-person--new-person) (12-5-22)
+- [What's the difference between `.call` and `.apply`?](#whats-the-difference-between-call-and-apply) (12-5-22)
+- [Explain `Function.prototype.bind`.](#explain-functionprototypebind) (12-5-22)
 - [When would you use `document.write()`?](#when-would-you-use-documentwrite)
 - [What's the difference between feature detection, feature inference, and using the UA string?](#whats-the-difference-between-feature-detection-feature-inference-and-using-the-ua-string)
 - [Explain Ajax in as much detail as possible.](#explain-ajax-in-as-much-detail-as-possible)
@@ -289,7 +289,7 @@ A closure is the combination of a function and the lexical environment within wh
 
 [[↑] Back to top](#table-of-contents)
 
-### Can you describe the main difference between a `.forEach` loop and a `.map()` loop and why you would pick one versus the other?
+### Can you describe the main difference between a `.forEach` loop and a `.map()` loop and why you would pick one versus the other? (12-5-22)
 
 To understand the differences between the two, let's look at what each function does.
 
@@ -330,7 +330,7 @@ The main difference between `.forEach` and `.map()` is that `.map()` returns a n
 
 [[↑] Back to top](#table-of-contents)
 
-### What's a typical use case for anonymous functions?
+### What's a typical use case for anonymous functions? (12-5-22)
 
 They can be used in IIFEs to encapsulate some code within a local scope so that variables declared in it do not leak to the global scope.
 
@@ -365,7 +365,7 @@ console.log(double); // [2, 4, 6]
 
 [[↑] Back to top](#table-of-contents)
 
-### How do you organize your code? (module pattern, classical inheritance?)
+### How do you organize your code? (module pattern, classical inheritance?) (12-5-22)
 
 In the past, I've used Backbone for my models which encourages a more OOP approach, creating Backbone models and attaching methods to them.
 
@@ -375,7 +375,7 @@ I avoid using classical inheritance where possible. When and if I do, I stick to
 
 [[↑] Back to top](#table-of-contents)
 
-### What's the difference between host objects and native objects?
+### What's the difference between host objects and native objects? (12-5-22)
 
 Native objects are objects that are part of the JavaScript language defined by the ECMAScript specification, such as `String`, `Math`, `RegExp`, `Object`, `Function`, etc.
 
@@ -387,7 +387,7 @@ Host objects are provided by the runtime environment (browser or Node), such as 
 
 [[↑] Back to top](#table-of-contents)
 
-### Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
+### Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`? (12-5-22)
 
 This question is pretty vague. My best guess at its intention is that it is asking about constructors in JavaScript. Technically speaking, `function Person(){}` is just a normal function declaration. The convention is to use PascalCase for functions that are intended to be used as constructors.
 
@@ -415,7 +415,7 @@ console.log(person.name); // "john"
 
 [[↑] Back to top](#table-of-contents)
 
-### What's the difference between `.call` and `.apply`?
+### What's the difference between `.call` and `.apply`? (12-5-22)
 
 Both `.call` and `.apply` are used to invoke functions and the first parameter will be used as the value of `this` within the function. However, `.call` takes in comma-separated arguments as the next arguments while `.apply` takes in an array of arguments as the next argument. An easy way to remember this is C for `call` and comma-separated and A for `apply` and an array of arguments.
 
@@ -430,7 +430,7 @@ console.log(add.apply(null, [1, 2])); // 3
 
 [[↑] Back to top](#table-of-contents)
 
-### Explain `Function.prototype.bind`.
+### Explain `Function.prototype.bind`. (12-5-22)
 
 Taken word-for-word from [MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind):
 

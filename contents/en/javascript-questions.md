@@ -374,6 +374,8 @@ The module pattern is still great, but these days, I use React/Redux which utili
 I avoid using classical inheritance where possible. When and if I do, I stick to [these rules](https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4).
 
 [Functional programming vs OOP programming](https://www.educative.io/blog/functional-programming-vs-oop)
+
+
 [Declarative vs imperative programming](https://www.educative.io/blog/declarative-vs-imperative-programming)
 
 [[↑] Back to top](#table-of-contents)

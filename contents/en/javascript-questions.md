@@ -13,7 +13,7 @@ Answers to [Front-end Job Interview Questions - JS Questions](https://github.com
 - [Explain why the following doesn't work as an IIFE: `function foo(){ }();`. What needs to be changed to properly make it an IIFE?](#explain-why-the-following-doesnt-work-as-an-iife-function-foo--what-needs-to-be-changed-to-properly-make-it-an-iife) (12-1-22)
 - [What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for any of these states?](#whats-the-difference-between-a-variable-that-is-null-undefined-or-undeclared-how-would-you-go-about-checking-for-any-of-these-states) (12-1-22)
 - [What is a closure, and how/why would you use one?](#what-is-a-closure-and-howwhy-would-you-use-one) (12-1-22)
-- [Can you describe the main difference between a `.forEach` loop and a `.map()` loop and why you would pick one versus the other?](#can-you-describe-the-main-difference-between-a-foreach-loop-and-a-map-loop-and-why-you-would-pick-one-versus-the-other)
+- [Can you describe the main difference between a `.forEach` loop and a `.map()` loop and why you would pick one versus the other?](#can-you-describe-the-main-difference-between-a-foreach-loop-and-a-map-loop-and-why-you-would-pick-one-versus-the-other) (12-5-22)
 - [What's a typical use case for anonymous functions?](#whats-a-typical-use-case-for-anonymous-functions) (12-5-22)
 - [How do you organize your code? (module pattern, classical inheritance?)](#how-do-you-organize-your-code-module-pattern-classical-inheritance) (12-5-22)
 - [What's the difference between host objects and native objects?](#whats-the-difference-between-host-objects-and-native-objects) (12-5-22)

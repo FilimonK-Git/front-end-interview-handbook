@@ -20,11 +20,11 @@ Answers to [Front-end Job Interview Questions - JS Questions](https://github.com
 - [Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?](#difference-between-function-person-var-person--person-and-var-person--new-person) (12-5-22)
 - [What's the difference between `.call` and `.apply`?](#whats-the-difference-between-call-and-apply) (12-5-22)
 - [Explain `Function.prototype.bind`.](#explain-functionprototypebind) (12-5-22)
-- [When would you use `document.write()`?](#when-would-you-use-documentwrite)
-- [What's the difference between feature detection, feature inference, and using the UA string?](#whats-the-difference-between-feature-detection-feature-inference-and-using-the-ua-string)
-- [Explain Ajax in as much detail as possible.](#explain-ajax-in-as-much-detail-as-possible)
-- [What are the advantages and disadvantages of using Ajax?](#what-are-the-advantages-and-disadvantages-of-using-ajax)
-- [Explain how JSONP works (and how it's not really Ajax).](#explain-how-jsonp-works-and-how-its-not-really-ajax)
+- [When would you use `document.write()`?](#when-would-you-use-documentwrite) (12-15-22)
+- [What's the difference between feature detection, feature inference, and using the UA string?](#whats-the-difference-between-feature-detection-feature-inference-and-using-the-ua-string) (12-15-22)
+- [Explain Ajax in as much detail as possible.](#explain-ajax-in-as-much-detail-as-possible) (12-15-22)
+- [What are the advantages and disadvantages of using Ajax?](#what-are-the-advantages-and-disadvantages-of-using-ajax) (12-15-22)
+- [Explain how JSONP works (and how it's not really Ajax).](#explain-how-jsonp-works-and-how-its-not-really-ajax) (12-15-22)
 - [Have you ever used JavaScript templating? If so, what libraries have you used?](#have-you-ever-used-javascript-templating-if-so-what-libraries-have-you-used)
 - [Explain "hoisting".](#explain-hoisting)
 - [Describe event bubbling.](#describe-event-bubbling)
@@ -462,7 +462,7 @@ There are some answers online that explain `document.write()` is being used in a
 
 [[↑] Back to top](#table-of-contents)
 
-### What's the difference between feature detection, feature inference, and using the UA string?
+### What's the difference between feature detection, feature inference, and using the UA string? (12-15-22)
 
 **Feature Detection**
 
@@ -502,7 +502,7 @@ This is a browser-reported string that allows the network protocol peers to iden
 
 [[↑] Back to top](#table-of-contents)
 
-### Explain Ajax in as much detail as possible.
+### Explain Ajax in as much detail as possible. (12-15-22)
 
 Ajax (asynchronous JavaScript and XML) is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send data to and retrieve from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows for web pages, and by extension web applications, to change content dynamically without the need to reload the entire page. In practice, modern implementations commonly substitute use JSON instead of XML, due to the advantages of JSON being native to JavaScript.
 
@@ -515,7 +515,7 @@ The `XMLHttpRequest` API is frequently used for the asynchronous communication o
 
 [[↑] Back to top](#table-of-contents)
 
-### What are the advantages and disadvantages of using Ajax?
+### What are the advantages and disadvantages of using Ajax? (12-15-22)
 
 **Advantages**
 
@@ -534,7 +534,7 @@ The `XMLHttpRequest` API is frequently used for the asynchronous communication o
 
 [[↑] Back to top](#table-of-contents)
 
-### Explain how JSONP works (and how it's not really Ajax).
+### Explain how JSONP works (and how it's not really Ajax). (12-15-22)
 
 JSONP (JSON with Padding) is a method commonly used to bypass the cross-domain policies in web browsers because Ajax requests from the current page to a cross-origin domain is not allowed.
 
